@@ -139,7 +139,7 @@ The application is deployed and accessible online.
 
 ### Frontend (Vercel)
 
-https://your-vercel-url.vercel.app
+https://ai-robotics-workshop-pi.vercel.app/
 
 ### Backend API (Render)
 
