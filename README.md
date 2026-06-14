@@ -1,9 +1,5 @@
 # 🤖 AI & Robotics Summer Workshop
 
-![React](https://img.shields.io/badge/React-18-61DAFB?style=flat\&logo=react\&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat\&logo=vite\&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3-06B6D4?style=flat\&logo=tailwindcss\&logoColor=white)
-![Express](https://img.shields.io/badge/Express.js-4-000000?style=flat\&logo=express\&logoColor=white)
 
 ## Project Overview
 
@@ -135,11 +131,46 @@ http://localhost:5000
 
 ---
 
+# 🚀 Deployment
+
+The application is deployed and accessible online.
+
+## Live Demo
+
+### Frontend (Vercel)
+
+https://your-vercel-url.vercel.app
+
+### Backend API (Render)
+
+https://ai-robotics-workshop-zinu.onrender.com
+
+---
+
+## Architecture
+
+```text
+React (Vercel)
+       │
+       │ Axios Requests
+       ▼
+Express API (Render)
+       │
+       ▼
+Form Validation & Enquiry Processing
+```
+
+---
+
 ## API Endpoint
 
-### POST `/api/enquiry`
+### Submit Enquiry
 
-Request:
+```http
+POST /api/enquiry
+```
+
+#### Request Body
 
 ```json
 {
@@ -149,7 +180,7 @@ Request:
 }
 ```
 
-Success Response:
+#### Success Response
 
 ```json
 {
@@ -158,7 +189,7 @@ Success Response:
 }
 ```
 
-Error Response:
+#### Error Response
 
 ```json
 {
@@ -169,28 +200,33 @@ Error Response:
 
 ---
 
-## Design Approach
+## Deployment Configuration
 
-The UI is inspired by Kidrove's event detail pages.
+### Frontend
 
-The application uses a component-based architecture where each section of the page is implemented as a reusable React component. A dedicated registration page was created using React Router to keep the registration process separate from the workshop information page.
+* Platform: Vercel
+* Framework: Vite
+* Build Command: `npm run build`
+* Output Directory: `dist`
 
-Tailwind CSS was used to build a responsive layout without writing custom CSS.
+### Backend
 
----
-
-## Future Improvements
-
-Given more time, I would:
-
-* Store enquiries using MongoDB
-* Send registration confirmation emails
-* Build an admin dashboard
-* Add workshop seat management
-* Deploy the application to production
-* Connect the "Ask a Question" section to the backend
+* Platform: Render
+* Runtime: Node.js
+* Start Command: `npm start`
 
 ---
+
+## Future Enhancements
+
+* Store enquiries in MongoDB
+* Email notifications using Nodemailer
+* Admin dashboard for enquiry management
+* Dynamic workshop management system
+* Authentication and role-based access
+* Seat availability tracking
+* Real-time registration analytics
+
 
 ## Author
 
